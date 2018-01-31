@@ -1,4 +1,4 @@
-Testing on demo
+Testing on demo.
 
 public static void selectdropdownByXpath(String xpath, String value){
 		WebElement dropdownvalue = driver.findElement(By.xpath(getObjectValue(xpath)));
