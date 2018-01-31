@@ -1,3 +1,11 @@
-Testing on democvbcb
-sdfsd
-Testdsfsd
+Testing on demo
+
+public static void selectdropdownByXpath(String xpath, String value){
+		WebElement dropdownvalue = driver.findElement(By.xpath(getObjectValue(xpath)));
+		Select dropdownlist = new Select(dropdownvalue);
+		List<WebElement> drop= dropdownlist.getOptions();
+		for(WebElement elem:drop)
+		{
+		((Select) elem).selectByVisibleText(value);
+		}
+	}
